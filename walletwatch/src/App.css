@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+.app{
+  position: relative;
+  width: 100%;
+  background-color: #FAF9F6;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__navbar{
+  background-color: #0fd43a;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  width: 100%;
+  height: 120px;
+  color: #FAF9F6;
+  font-size: 35px;
 }
 
-.App-link {
-  color: #61dafb;
+.watch{
+  color: #35374f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__controls__counter{
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+h2{
+  position: fixed;
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 25px;
+  color: #0fd43a;
+  border: 4px solid #35374f;
+  border-radius: 20px;
+}
+
+.app__controls__delete{
+  position: absolute;
+  top: 80px;
+  right: 250px;
+}
+
+.btn__delete__all{
+  position: absolute;
+  font-size: 20px;
+  background-color: red;
+  color: #FAF9F6;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 150px;
+}
+
+.btn__delete__all:hover{
+  color: red;
+  background-color: #FAF9F6;
+  transition: 0.25s;
 }
