@@ -1,60 +1,259 @@
-.app{
+html {
+  background-color: white;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+.app {
   position: relative;
   width: 100%;
-  background-color: #FAF9F6;
+  height: 100%;
   overflow-x: hidden;
 }
 
-.app__navbar{
-  background-color: #0fd43a;
+.app__navbar {
+  background-color: #1ac53f;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   width: 100%;
-  height: 120px;
+  height: 200px;
   color: #FAF9F6;
-  font-size: 35px;
+  font-size: 50px;
 }
 
-.watch{
+.watch {
   color: #35374f;
 }
 
-.app__controls__counter{
+h2 {
   margin-left: 25px;
-  margin-top: 25px;
-}
-
-h2{
-  position: fixed;
+  margin-top: 15px;
+  position: absolute;
   display: inline-block;
   padding: 15px 20px;
   font-size: 25px;
-  color: #0fd43a;
-  border: 4px solid #35374f;
+  color: #1ac53f;
+  border: 3px solid #35374f;
   border-radius: 20px;
 }
 
-.app__controls__delete{
-  position: absolute;
-  top: 80px;
-  right: 250px;
+.total_amount_spent {
+  color: #35374f;
 }
 
-.btn__delete__all{
+.app__controls__delete {
+  position: absolute;
+  top: 230px;
+  right: 30px;
+  width: 150px;
+  height: 25px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.btn__delete__all {
   position: absolute;
   font-size: 20px;
   background-color: red;
   color: #FAF9F6;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 10px 15px;
   width: 150px;
+  text-align: center;
+  border: 1px solid #35374f;
+  font-family: 'Raleway', sans-serif;
 }
 
-.btn__delete__all:hover{
+.btn__delete__all:hover {
   color: red;
   background-color: #FAF9F6;
   transition: 0.25s;
+}
+
+.app__controls{
+  width: 50%;
+  height: 150px;
+  margin: 50px auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+.app__controls__inputs{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+}
+
+.app__controls__inputs input{
+  width: 500px;
+  padding: 15px;
+  margin: 15px 0;
+  font-size: 18px;
+  border:1px solid #35374f;
+  border-radius: 15px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #FAF9F6;
+}
+
+.btn__add__expense{
+  font-size: 20px;
+  background-color: #1ac53f;
+  color: #FAF9F6;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 10px 15px;
+  width: 200px;
+  text-align: center;
+  border: 1px solid #35374f;
+  font-family: 'Raleway', sans-serif;
+}
+
+.btn__add__expense:hover {
+  color: #1ac53f;
+  background-color: #FAF9F6;
+  transition: 0.25s;
+}
+
+.app__expenses__container{
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.app__expenses__container__wrapper{
+  height: auto;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.app__expenses__container__wrapper__inner{
+  height: 100px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border: 2px solid #35374f;
+  margin:10px 0;
+  padding: 5px;
+  font-size: 30px;
+  font-weight: 800;
+  border-radius: 15px;
+}
+
+.expense__display {
+  margin: 25px;
+}
+
+.btn__delete__expense__div{
+  padding-left: 30px;
+}
+
+.btn__delete__expense{
+  font-size: 16px;
+  background-color: red;
+  color: #FAF9F6;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 10px 15px;
+  width: 100px;
+  text-align: center;
+  border: 1px solid #35374f;
+  font-family: 'Raleway', sans-serif;
+  margin-right: 25px; 
+
+}
+
+.btn__delete__expense:hover {
+  color: red;
+  background-color: #FAF9F6;
+  transition: 0.25s;
+}
+
+.no_expenses{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.app__model{
+  width: 300px;
+  height: 90px;
+  background-color: white;
+  border: 1px solid #35374f;
+  border-radius: 15px;
+  position: absolute;
+  color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.btn__close__model{
+  font-size: 20px;
+  background-color: red;
+  color: #FAF9F6;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 10px 15px;
+  width: 200px;
+  text-align: center;
+  border: 1px solid #35374f;
+  font-family: 'Raleway', sans-serif;
+}
+
+.btn__close__model:hover{
+  color: red;
+  background-color: #FAF9F6;
+  transition: 0.25s;
+}
+
+.app__expenses__container__select{
+  padding-top: 30px;
+}
+
+.app__expenses__container__select select{
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #35374f;
+  font-family: 'Raleway', sans-serif;
+}
+
+.blank{
+  height: 100px;
+}
+
+.app__footer {
+  background-color: #1ac53f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  color: #FAF9F6;
+  font-size: 25px;
+}
+
+.name{
+  color: #35374f;
 }
